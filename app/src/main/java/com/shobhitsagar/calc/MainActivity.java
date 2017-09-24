@@ -2,6 +2,8 @@ package com.shobhitsagar.calc;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -37,5 +39,25 @@ public class MainActivity extends AppCompatActivity {
                 totaltext.setText(String.valueOf(t));
             }
         });
+    }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuItem a = menu.add("Exit");
+        a.setIcon(R.drawable.ic_exit);
+        a.setShowAsAction(MenuItem.SHOW_AS_ACTION_ALWAYS);
+        a.setOnMenuItemClickListener(new MenuItem.OnMenuItemClickListener() {
+            @Override
+            public boolean onMenuItemClick(MenuItem item) {
+                onBackPressed();
+                return true;
+            }
+        });
+        return true;
     }
 }
