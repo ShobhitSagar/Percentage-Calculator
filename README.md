@@ -5,6 +5,7 @@ Percentage Calculator provides simple percentage calculation in a beautifully de
 
 ---
 
+
 ![](Screenshots/Screen%20Shot%202017-12-22%20at%208.45.48%20PM.png)
 
 
