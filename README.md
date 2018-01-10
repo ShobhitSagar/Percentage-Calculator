@@ -1,7 +1,10 @@
 # Percentage-Calculator
+
 Percentage Calculator provides simple percentage calculation in a beautifully designed app.
 
+
 > Easy for learning and starting with android.
+
 
 ---
 
