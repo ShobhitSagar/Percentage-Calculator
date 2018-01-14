@@ -31,9 +31,7 @@ public class MainActivity extends AppCompatActivity {
         calculate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
                 Float p = Float.parseFloat(percentagetext.getText().toString());
-
                 Float n = Float.parseFloat(numbertext.getText().toString());
                 float t = (p/100)*n;
                 totaltext.setText(String.valueOf(t));
